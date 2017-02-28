@@ -254,6 +254,8 @@ private:
 
 	uint64_t _time_acc_bias_check;	// last time the  accel bias check passed (usec)
 
+	uint64_t _delta_time_baro_us;	// delta time between two consecutive delayed baro samples from the buffer (usec)
+
 	Vector3f _earth_rate_NED;	// earth rotation vector (NED) in rad/s
 
 	matrix::Dcm<float> _R_to_earth;	// transformation matrix from body frame to earth frame from last EKF predition
